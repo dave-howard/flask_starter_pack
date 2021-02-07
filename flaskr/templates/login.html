@@ -1,0 +1,21 @@
+{% extends "base.html" %}
+
+{% block body %}
+<h3>Log in</h3>
+<form method="post" target="{{ url_for('login') }}">
+    <div class="input-group m-1">
+        <div class="input-group-prepend">
+            <label for="username" class="input-group-text form-control" style="width: 200px;">User name:</label>
+            <input type="text" id="username" name="username" autofocus>
+        </div>
+    </div>
+    <div class="input-group m-1">
+        <div class="input-group-prepend">
+            <label for="password" class="input-group-text form-control" style="width: 200px;">Password:</label>
+            <input type="password" id="password" name="password">
+        </div>
+    </div>
+
+    <button type="submit" class="btn btn-success">Login</button>
+</form>
+{% endblock %}
