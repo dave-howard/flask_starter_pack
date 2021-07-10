@@ -3,6 +3,10 @@ from flaskr.models import db, User, session
 from flaskr import views
 import sys
 
+######################################################################
+# this is no longer needed as app started using set FLASK_APP=flaskr #
+######################################################################
+
 if __name__ == "main":
     print("db.create_all()")
     db.create_all()  # create database if not already there
